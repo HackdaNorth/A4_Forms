@@ -1,0 +1,38 @@
+/* 
+    Created on : Apr. 3, 2019, 8:35:34 a.m.
+    Author     : Connor Murray : #991553779
+*/
+body, html {
+    background-color: rgba(55, 220, 5, 0.3);
+    display: grid;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.personalinfo {
+    padding: 20px;
+    border-style: solid;
+}
+.sheridanexp {
+    padding: 20px;
+    border-style: solid;
+}.headcontainer {
+    text-align: center;
+    background-color: rgba(100, 100, 255, 0.3);
+    border-style: double;
+}.financialdata {
+    padding: 20px;
+    border-style: solid;
+}.commentsection {
+    padding: 20px;
+    border-style: solid;
+}
+#submitbtn {
+    content-align: right;
+    float:right;
+}
+#resetbtn {
+    float:right;
+}

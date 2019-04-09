@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Name: Connor Murray
+    Student Number: #991553779
+-->
+<html>
+    <head>
+        <script>
+        function grab_name() {
+            let name = document.getElementById("firstname").value;
+            let num = document.getElementById("studentnum").value;
+            alert("Name: " + name + "\nStudent Number: " + num);
+        }
+        function reset_form() {
+            document.getElementById("personalform").reset();
+            document.getElementById("experienceform").reset();
+            document.getElementById("financialform").reset();
+            document.getElementById("commentform").reset();;
+        }
+        </script>
+        <title>Connor Murray Form Examples</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="headcontainer">
+         <div>
+         <h1>Assignment #4 / Connor Murray / 991553779</h1>
+         </div>
+        </div>
+        
+        <div class="grid-container">
+         <div class="personalinfo">
+          <form method="POST" id="personalform">
+              Last name:<br>
+              <input placeholder="Murray" type="text" name="lastname" id="lastname">
+              <br>
+              First name:<br>
+              <input placeholder="Connor" type="text" name="firstname" id="firstname">
+              <br>
+              Student Number:<br>
+              <input placeholder="991553779" type="text" name="studnentNumber" id="studentnum">
+              <br>
+              Sheridan Email:<br>
+              <input placeholder="murrconn@sheridancollege.ca" type="text" name="sheridanEmail" id="sheridane">
+              <br>
+              
+          </form>  
+         </div>
+         <div class="sheridanexp">
+          <form method="POST" id="experienceform">
+           Enrollment date @ Sheridan:<br>
+           <input  type="text" name="datestarted" id="startdate">
+           <br>
+           Previous years of post-secondary:<br>
+           <input type="text" name="postyears" id="postyears">
+           <br>
+           Sheridan Campus: <br>
+           <input type="radio" name="campus" value="Trafalgar Campus">
+           Trafalgar Campus <br>
+           <input type="radio" name="campus" value="Davis Campus">
+           Davis Campus <br>
+           <input type="radio" name="campus" value="Hazel Mcallion Campus">
+           Hazel Mcallion Campus <br>
+           <br>
+          </form>
+         </div>
+         <div class="financialdata">
+          <form method="POST" id="financialform">
+          Money Received for tuition:<br>
+          <input type="text" name="financial" id="osapfund">
+          <br>
+          Money Source<br>
+          <input type="checkbox" name="financial" id="fundScholar">
+          Scholarship <br>
+          <input type="checkbox" name="financial" id="fundRESP">
+          RESP <br>
+          <input type="checkbox" name="financial" id="fundBursary">
+          Bursary<br>
+          <input type="checkbox" name="financial" id="fundOSAP">
+          OSAP<br>
+          </form>
+         </div>
+         <div class="commentsection ">
+          <form method="POST" id="commentform">
+           Name: <input type="text" name="usrname">
+            <br>
+            <br>
+            <textarea rows="4" cols="50" name="comment" form="usrform"> Comment...</textarea>
+          </form>
+         </div>
+        </div>
+        <button onclick="grab_name()" id="submitbtn"> Submit </button>
+        <button onclick="reset_form()" id="resetbtn"> Reset </button>
+    </body>
+</html>
